@@ -218,10 +218,6 @@ li { list-style: none; }
   grid-column: span 2;
 }
 
-.p-200 .image img {
-  object-fit: contain;
-}
-
 
 
 a,
@@ -288,10 +284,6 @@ body.nav-active { overflow: hidden; }
 
 .container { padding-inline: 16px; }
 .section { padding-block: var(--section-padding); }
-il { display: inline-block; max-width: 100%; }
-
-[id^="msc-"] { scroll-margin-top: 110px; }
-
 .tab { margin-left: 40px; 
   font-size: var(--fs-7);
   display: inline-block;}
@@ -612,19 +604,7 @@ main { overflow-x: hidden; }
   margin-bottom: 10px;
 }
 
-.about-card .card-title {
-  margin-block: 16px 10px;
-  min-height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-card .card-text {
-  text-align: left;
-  max-width: 260px;
-  margin-inline: auto;
-}
+.about-card .card-title { margin-block: 16px 10px; }
 
 
 /*-----------------------------------*\
@@ -1119,7 +1099,8 @@ textarea.input-field {
    }
 
   .about .wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
 
